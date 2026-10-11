@@ -2,48 +2,63 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Para el amor de mi vida 💛</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="card">
-        <h1>Para ti, mi amor, se que es tarde pero mejor tarde que nunca 💛</h1>
-        <p class="message">Unas flores amarillas que nunca se marchitarán, como mi amor por ti.</p>
+        <h1>¡Para mi Amor! 💛</h1>
+        <p class="message">Un detalle especial con todo mi corazón para ti.</p>
         
-        <div class="flowers-container">
-            <div class="flower">
-                <div class="stem"></div>
-                <div class="leaf left"></div>
-                <div class="leaf right"></div>
-                <div class="petals">
-                    <span></span><span></span><span></span><span></span><span></span><span></span>
+        <button id="loveButton">Descubrir ✨</button>
+
+        <div id="hiddenContent" class="hidden-content">
+            <div class="images-container">
+                <div class="image-frame">
+                    <img src="./imagenesbby/VON.jpeg" alt="Mi amor">
                 </div>
-                <div class="center"></div>
-            </div>
-            <div class="flower">
-                <div class="stem"></div>
-                <div class="leaf left"></div>
-                <div class="leaf right"></div>
-                <div class="petals">
-                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                <div class="image-frame">
+                    <img src="./imagenesbby/gatito flores amarilla.jpg" alt="Imagen especial">
                 </div>
-                <div class="center"></div>
             </div>
-            <div class="flower">
-                <div class="stem"></div>
-                <div class="leaf left"></div>
-                <div class="leaf right"></div>
-                <div class="petals">
-                    <span></span><span></span><span></span><span></span><span></span><span></span>
+
+            <!-- Flores amarillas dinámicas -->
+            <div class="flowers-container">
+                <div class="flower">
+                    <div class="stem"></div>
+                    <div class="leaf left"></div>
+                    <div class="leaf right"></div>
+                    <div class="petals">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="center"></div>
                 </div>
-                <div class="center"></div>
+                <div class="flower">
+                    <div class="stem"></div>
+                    <div class="leaf left"></div>
+                    <div class="leaf right"></div>
+                    <div class="petals">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="center"></div>
+                </div>
+                <div class="flower">
+                    <div class="stem"></div>
+                    <div class="leaf left"></div>
+                    <div class="leaf right"></div>
+                    <div class="petals">
+                        <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="center"></div>
+                </div>
             </div>
+
+            <p class="final-love">¡Te amo muchísimo! 🌻💛</p>
         </div>
-        
-        <button id="loveButton">PUCHAME BABY</button>
-        <p id="secretMessage" class="hidden">¡Te amo muchísimo! Gracias por hacer mi vida más feliz. 🌻💛</p>
     </div>
+
+    <div id="hearts-container"></div>
 
     <script src="script.js"></script>
 </body>
