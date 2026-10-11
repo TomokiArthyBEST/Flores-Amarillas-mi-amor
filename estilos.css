@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 90%;
+    color: #fff;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+}
+
+.message {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+.flowers-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 180px;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.flower {
+    position: relative;
+    width: 30px;
+    height: 150px;
+    animation: grow 2s ease-out forwards;
+    transform-origin: bottom;
+}
+
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    width: 6px;
+    height: 120px;
+    background: #4caf50;
+    border-radius: 3px;
+}
+
+.leaf {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    background: #4caf50;
+    border-radius: 10px 0 10px 0;
+}
+
+.leaf.left {
+    bottom: 40px;
+    left: -2px;
+    transform: rotate(-30deg);
+}
+
+.leaf.right {
+    bottom: 70px;
+    right: -2px;
+    transform: rotate(30deg);
+}
+
+.center {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: #795548;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.petals span {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 20px;
+    height: 35px;
+    background: #ffeb3b;
+    border-radius: 50%;
+    transform-origin: bottom center;
+}
+
+.petals span:nth-child(1) { transform: rotate(0deg); }
+.petals span:nth-child(2) { transform: rotate(60deg); }
+.petals span:nth-child(3) { transform: rotate(120deg); }
+.petals span:nth-child(4) { transform: rotate(180deg); }
+.petals span:nth-child(5) { transform: rotate(240deg); }
+.petals span:nth-child(6) { transform: rotate(300deg); }
+
+@keyframes grow {
+    0% { transform: scaleY(0); opacity: 0; }
+    100% { transform: scaleY(1); opacity: 1; }
+}
+
+button {
+    background-color: #ffeb3b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #fbc02d;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffeb3b;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
